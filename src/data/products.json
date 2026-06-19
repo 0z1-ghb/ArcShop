@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso Coffee (250g)",
+    "price": "8.50",
+    "currency": "USDC",
+    "description": "Premium Italian espresso beans",
+    "image": "/images/arc-coffee.jpg",
+    "category": "Food",
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "name": "Arc Logo T-Shirt",
+    "price": "22.00",
+    "currency": "USDC",
+    "description": "Black organic cotton, unisex",
+    "image": "/images/arc-tshirt.jpg",
+    "category": "Clothing",
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "name": "Blockchain Book",
+    "price": "15.00",
+    "currency": "USDC",
+    "description": "PDF + EPUB format, 180 pages",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=200&fit=crop",
+    "category": "Digital",
+    "stock": 999
+  },
+  {
+    "id": 4,
+    "name": "Arc Gaming Mousepad",
+    "price": "12.75",
+    "currency": "USDC",
+    "description": "Premium 16-bit retro gaming mousepad with Arc branding",
+    "image": "/images/arc-mousepad.jpg",
+    "category": "Accessories",
+    "stock": 40
+  },
+  {
+    "id": 5,
+    "name": "$10 USDC Gift Card",
+    "price": "10.00",
+    "currency": "USDC",
+    "description": "Send to another wallet",
+    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300&h=200&fit=crop",
+    "category": "Gift",
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "name": "Arc Hoodie",
+    "price": "45.00",
+    "currency": "USDC",
+    "description": "Premium heavy cotton hoodie with Arc logo",
+    "image": "/images/arc-hoodie.jpg",
+    "category": "Clothing",
+    "stock": 25
+  },
+  {
+    "id": 7,
+    "name": "Arc Cap",
+    "price": "18.00",
+    "currency": "USDC",
+    "description": "Embroidered Arc logo cap, adjustable",
+    "image": "/images/arc-cap.jpg",
+    "category": "Clothing",
+    "stock": 40
+  },
+  {
+    "id": 8,
+    "name": "Arc Keychain",
+    "price": "9.00",
+    "currency": "USDC",
+    "description": "Metal keychain with Arc branding",
+    "image": "/images/arc-keychain.jpg",
+    "category": "Accessories",
+    "stock": 55
+  },
+  {
+    "id": 9,
+    "name": "Arc Enamel Mug",
+    "price": "14.00",
+    "currency": "USDC",
+    "description": "12oz ceramic mug with Arc logo",
+    "image": "/images/arc-mug.jpg",
+    "category": "Accessories",
+    "stock": 35
+  },
+  {
+    "id": 10,
+    "name": "Arc Socks (3 pairs)",
+    "price": "12.00",
+    "currency": "USDC",
+    "description": "Comfortable cotton socks with Arc pattern",
+    "image": "/images/arc-socks.jpg",
+    "category": "Clothing",
+    "stock": 45
+  }
+]
