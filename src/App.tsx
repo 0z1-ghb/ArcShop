@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import { AppKit } from '@circle-fin/app-kit'
-import { createViemAdapterFromProvider } from '@circle-fin/adapter-viem-v2'
 import type { EIP1193Provider } from 'viem'
 import products from './data/products.json'
 
@@ -55,7 +53,6 @@ function App() {
 
   const categories = ['All', ...new Set(products.map(p => p.category))]
 
-  // Filtered + Sorted products
   let filteredProducts = selectedCategory === 'All' 
     ? [...products] 
     : products.filter(p => p.category === selectedCategory)
@@ -151,7 +148,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      {/* Top Bar */}
       <div className="border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -179,13 +175,11 @@ function App() {
       </div>
 
       <div className="max-w-7xl mx-auto px-8 pt-12 pb-20">
-        {/* Hero */}
         <div className="mb-12">
           <div className="text-6xl font-semibold tracking-[-3.5px] leading-none">Shop on Arc.<br />Pay with USDC.</div>
           <div className="mt-4 text-slate-400 text-xl">Instant settlement • Sub-second finality</div>
         </div>
 
-        {/* Filters + Sort */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-9">
           <div className="flex flex-wrap gap-2">
             {categories.map(cat => (
@@ -198,7 +192,6 @@ function App() {
             ))}
           </div>
 
-          {/* Sort Dropdown */}
           <div className="md:ml-auto">
             <select 
               value={sortMode} 
@@ -212,7 +205,6 @@ function App() {
           </div>
         </div>
 
-        {/* Products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map(product => (
             <div key={product.id} onClick={() => setSelectedProduct(product)}
@@ -237,10 +229,8 @@ function App() {
         </div>
       </div>
 
-      {/* Toast */}
       {toast && <div className={`fixed bottom-6 left-1/2 -translate-x-1/2 px-6 py-3 text-sm rounded-2xl border ${toast.type === 'error' ? 'bg-red-900 border-red-700' : 'bg-slate-900 border-slate-700'}`}>{toast.message}</div>}
 
-      {/* Product Modal */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[90] p-6" onClick={() => setSelectedProduct(null)}>
           <div className="bg-slate-900 w-full max-w-3xl rounded-3xl overflow-hidden border border-slate-700" onClick={e => e.stopPropagation()}>
@@ -263,7 +253,6 @@ function App() {
         </div>
       )}
 
-      {/* Cart Modal */}
       {showCart && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[90] p-6" onClick={() => setShowCart(false)}>
           <div className="bg-slate-900 w-full max-w-md rounded-3xl border border-slate-700" onClick={e => e.stopPropagation()}>
